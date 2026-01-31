@@ -1,5 +1,7 @@
 # SIMPLE-Solver-of-CPP-
-这是一个用C++语言编写的简易SIMPLE流体求解器
+这是一个用C++语言编写的简易SIMPLE流体求解器。
+![picture1](https://github.com/xiaoyang-cfd/SIMPLE-Solver-of-CPP-/edit/main/picture/SIMPLE1.png)
+![picture2](https://github.com/xiaoyang-cfd/SIMPLE-Solver-of-CPP-/edit/main/picture/SIMPLE2.png)
 ## 功能说明
 用于简易的流体求解器，使用SIMPLE算法，求解速度、压力等物理量。
 ## 适用特点
