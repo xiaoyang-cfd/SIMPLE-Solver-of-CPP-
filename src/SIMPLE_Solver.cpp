@@ -1875,7 +1875,7 @@ void SIMPLE_Solver::IterativeSolver_vel(size_t iter_nonlin, size_t nstep, Variab
 				if (iter_nonlin % fre_termiPrint == 0 || iter_nonlin == 1 || iter_nonlin == nstep) {
 					//终端输出
 					std::cout << "No.iter_nonlin:" << iter_nonlin
-						<< "|No.iter_lin:" << iter
+						<< "|No.iter_lin:" << iter + 1
 						<< "|norm2:" << norm2
 						<< "|norm_max:" << norm_max
 						<< "|res:" << res
@@ -2005,7 +2005,7 @@ void SIMPLE_Solver::IterativeSolver_vel(size_t iter_nonlin, size_t nstep, Variab
 				if (iter_nonlin % fre_termiPrint == 0 || iter_nonlin == 1 || iter_nonlin == nstep) {
 					//终端输出
 					std::cout << "No.iter_nonlin:" << iter_nonlin
-						<< "|No.iter_lin:" << iter
+						<< "|No.iter_lin:" << iter + 1
 						<< "|norm2:" << norm2
 						<< "|norm_max:" << norm_max
 						<< "|res:" << res
@@ -2179,7 +2179,7 @@ void SIMPLE_Solver::IterativeSolver_p(size_t iter_nonlin, size_t nstep, size_t f
 				if (iter_nonlin % fre_termiPrint == 0 || iter_nonlin == 1 || iter_nonlin == nstep) {
 					//终端输出
 					std::cout << "No.iter_nonlin:" << iter_nonlin
-						<< "|No.iter_lin:" << iter
+						<< "|No.iter_lin:" << iter + 1
 						<< "|norm2:" << norm2
 						<< "|norm_max:" << norm_max
 						<< "|res:" << res
@@ -2309,7 +2309,7 @@ void SIMPLE_Solver::IterativeSolver_p(size_t iter_nonlin, size_t nstep, size_t f
 				if (iter_nonlin % fre_termiPrint == 0 || iter_nonlin == 1 || iter_nonlin == nstep) {
 					//终端输出
 					std::cout << "No.iter_nonlin:" << iter_nonlin
-						<< "|No.iter_lin:" << iter
+						<< "|No.iter_lin:" << iter + 1
 						<< "|norm2:" << norm2
 						<< "|norm_max:" << norm_max
 						<< "|res:" << res
