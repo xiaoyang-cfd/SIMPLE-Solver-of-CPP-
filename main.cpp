@@ -93,7 +93,7 @@ int main() {
 
 	
 	//设置求解器参数
-	size_t nonlin_iter = 300;                           //非线性迭代次数
+	size_t nonlin_iter = 800;                           //非线性迭代次数
 	//double dt = 0.01;                                 //时间步长
 	bool stop_switch = false;                           //跳出循环的开关
 	Conv_scheme conv_scheme = Conv_scheme::UPWIND;      //对流项离散格式
@@ -106,7 +106,7 @@ int main() {
 	double alpha_p = 0.15;                              //压力松弛因子
 	double lin_tolerance_u = 1e-4;                      //速度的线性迭代容差
 	double lin_tolerance_p = 1e-6;                      //压力的线性迭代容差
-	double nonlin_tolerance = 1e-4;                     //非线性迭代的容差
+	double nonlin_tolerance = 1e-6;                     //非线性迭代的容差
 	//各个物理量的二阶范数(待补充)
 
 	//存储收敛容差设置

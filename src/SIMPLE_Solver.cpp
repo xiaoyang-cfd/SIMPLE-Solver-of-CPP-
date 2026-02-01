@@ -2805,7 +2805,7 @@ void SIMPLE_Solver::saveVTK_Vel_Result(std::string filename) {
 	}
 
 	// 写入速度v
-	vtk_fid << "v" << " 1 " << ncell << " float\n";
+	vtk_fid << "\nv" << " 1 " << ncell << " float\n";
 	for (size_t k = 0; k < nz - 1; ++k) {
 		for (size_t j = 0; j < ny - 1; ++j) {
 			for (size_t i = 0; i < nx - 1; ++i) {
@@ -2815,7 +2815,7 @@ void SIMPLE_Solver::saveVTK_Vel_Result(std::string filename) {
 	}
 
 	// 写入速度w
-	vtk_fid << "w" << " 1 " << ncell << " float\n";
+	vtk_fid << "\nw" << " 1 " << ncell << " float\n";
 	for (size_t k = 0; k < nz - 1; ++k) {
 		for (size_t j = 0; j < ny - 1; ++j) {
 			for (size_t i = 0; i < nx - 1; ++i) {
